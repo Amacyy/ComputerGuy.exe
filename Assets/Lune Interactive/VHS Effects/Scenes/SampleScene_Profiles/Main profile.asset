@@ -43,6 +43,49 @@ MonoBehaviour:
   Debug:
     overrideState: 1
     value: 0
+--- !u!114 &-6883323222115365896
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d15455d5977d35478440d60be96f97a, type: 3}
+  m_Name: VHSEffect
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  NoiseLimit:
+    overrideState: 1
+    value: 1
+  DistortionOffset:
+    overrideState: 1
+    value: 0.5
+  NoiseScale:
+    overrideState: 1
+    value: 0.5
+  speed:
+    overrideState: 1
+    value: 0.5
+  NoisePower:
+    overrideState: 1
+    value: 0.5
+  NoiseStrength:
+    overrideState: 1
+    value: 0.5
+  RGBSeparation:
+    overrideState: 1
+    value: {x: 0, y: 0, z: 0}
+  ThresholdOption:
+    overrideState: 1
+    value: 0
+  Debug:
+    overrideState: 1
+    value: 0
 --- !u!114 &-4759624085835839542
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -84,9 +127,28 @@ MonoBehaviour:
   m_Name: Main profile
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: -7907728853315855072}
-  - {fileID: 3166224332094195203}
-  - {fileID: 4519341767269590335}
+  - {fileID: 854502283104615359}
+  - {fileID: -6883323222115365896}
+  - {fileID: 4018159933526719456}
+--- !u!114 &854502283104615359
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08d13ed71eeb1246a0bdade1da51276, type: 3}
+  m_Name: PixelationEffect
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  Pixels:
+    overrideState: 1
+    value: 300
 --- !u!114 &3166224332094195203
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -125,6 +187,37 @@ MonoBehaviour:
   Pixels:
     overrideState: 0
     value: 100
+--- !u!114 &4018159933526719456
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e582812fe177645af2c596ad5b84df, type: 3}
+  m_Name: TapeFlake
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  ScreenFallOff:
+    overrideState: 1
+    value: 2
+  XScale:
+    overrideState: 1
+    value: 1
+  YScale:
+    overrideState: 1
+    value: 1
+  TimeScale:
+    overrideState: 1
+    value: 1
+  Threshold:
+    overrideState: 1
+    value: 0.5
 --- !u!114 &4519341767269590335
 MonoBehaviour:
   m_ObjectHideFlags: 3

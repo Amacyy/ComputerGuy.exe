@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7191525240543257578}
   - component: {fileID: 1444896100}
   m_Layer: 0
-  m_Name: RetroRenderer
+  m_Name: VHS_Effects
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,6 +149,8 @@ MonoBehaviour:
   - assemblyQualifiedName: VHSEffect, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - assemblyQualifiedName: PixelationEffect, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - assemblyQualifiedName: TapeFlake, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!114 &7191525240543257578
 MonoBehaviour:
