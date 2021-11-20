@@ -5,18 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class trap : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float damage;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.tag == "Player")
+        {
+            collision.GetComponent<health>().TakeDamage(damage);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    
-
 }
