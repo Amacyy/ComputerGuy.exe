@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +13,8 @@ public class Movement : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float walljumpcooldown;
     public float horizontalInput;
+
+    public static event Action CoinPickedUp = delegate { };
 
     private void Awake()
     {
@@ -76,11 +79,6 @@ public class Movement : MonoBehaviour
      
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-            
-    }
 
     private bool isGrounded()
     {
@@ -94,5 +92,7 @@ public class Movement : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 1f, walllayer);
         return raycastHit.collider != null;
     }
+
+
 
 }
